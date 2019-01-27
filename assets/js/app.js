@@ -8,8 +8,15 @@ require('bootstrap');
 
 require('jquery.scrollbar');
 
+//$('.main-content').scrollbar();
+// $('header [href]').click(function(event) {
+//     event.preventDefault();
+//     $('header [href]').removeClass('active');
+//     $(this).addClass('active');
+//
+//     var href = $(this).attr('href');
+// });
 $(document).ready(function() {
-    $('.main-content').scrollbar();
 
     $('[data-href]').click(function(event){
         window.location = $(this).data('href');
