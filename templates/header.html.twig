@@ -26,12 +26,12 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="locale-flag" src="{{ asset('img/it.png') }}" alt="it_IT">
+                    <img class="locale-flag" src="{{ asset('img/' ~ app.session.get('_locale') ~ '.png') }}" alt="{{ "chose_language" | trans }}" title="{{ "chose_language" | trans }}">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     {# ICONE: https://www.iconfinder.com/iconsets/195-flat-flag-psd-icons #}
-                    <a class="dropdown-item" href="{{ path('locale', { _locale : 'it'} ) }}"><img class="locale-flag" src="{{ asset('img/it.png') }}" alt="it_IT"> <span class="ml-2">Italiano</span></a>
-                    <a class="dropdown-item" href="{{ path('locale', { _locale : 'en'} ) }}"><img class="locale-flag"  src="{{ asset('img/en.png') }}" alt="en_EN"> <span class="ml-2">Inglese</span></a>
+                    <a class="dropdown-item" href="{{ path('locale', { _locale : 'it'} ) }}"><img class="locale-flag" src="{{ asset('img/it.png') }}" alt="it_IT" title="it_IT"> <span class="ml-2">Italiano</span></a>
+                    <a class="dropdown-item" href="{{ path('locale', { _locale : 'en'} ) }}"><img class="locale-flag"  src="{{ asset('img/en.png') }}" alt="en_EN" title="en_EN"> <span class="ml-2">Inglese</span></a>
                 </div>
             </li>
             {#<li class="nav-item text-nowrap">#}
