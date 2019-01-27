@@ -1,0 +1,10 @@
+{#<nav class="navbar navbar-dark bg-dark">#}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mr-auto" href="{{ path('index') }}">Cristian Carrino</a>
+
+    <div class="text-nowrap">
+        {# ICONE: https://www.iconfinder.com/iconsets/195-flat-flag-psd-icons #}
+        <a class="mr-2" href="{{ path('locale', { _locale : 'it'} ) }}"><img class="locale-flag" src="{{ asset('img/it.png') }}" alt="it_IT"></a>
+        <a href="{{ path('locale', { _locale : 'en'} ) }}"><img class="locale-flag"  src="{{ asset('img/en.png') }}" alt="en_EN"></a>
+    </div>
+</nav>

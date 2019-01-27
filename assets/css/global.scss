@@ -1,0 +1,44 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.locale-flag {
+  height: 1.3rem;
+}
+
+.text-nolink {
+  &,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover {
+    font-style: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    text-decoration: none;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    border-radius: inherit;
+    border: inherit;
+    outline: inherit;
+    box-shadow: inherit;
+    padding: inherit;
+    vertical-align: inherit;
+  }
+}

@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}<link href="{{ asset('build/homepage.css') }}" rel="stylesheet">{% endblock %}
+
+{% block main %}
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 align-self-end mt-3 mt-md-5">
+                <h1 class="mb-0 my-md-5 display-4 text-center">{{ "who-are-you" | trans }}?</h1>
+            </div>
+
+            <div class="col-md-6 mt-3 mt-md-5">
+                <div class="card homepage-card" data-toggle="modal" data-target="#contactModal">
+                    <img class="card-img-top" src="{{ asset('img/beautiful-girl.jpg') }}">
+                    <div class="card-body">
+                        {#<h5 class="card-title">{{ "beautiful-girl-text" | trans }}</h5>#}
+                        <p class="card-text">{{ "homepage-beautiful-girl" | trans }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-3 mt-md-5">
+                <div class="card homepage-card" data-href="{{ path('cv') }}">
+                    <img class="card-img-top" src="{{ asset('img/businessman.jpg') }}">
+                    <div class="card-body">
+                        {#<h5 class="card-title">{{ "businessman-text" | trans }}</h5>#}
+                        <p class="card-text">{{ "homepage-businessman" | trans }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Sender:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
