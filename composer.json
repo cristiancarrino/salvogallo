@@ -71,8 +71,8 @@
         ],
         "deploy-verbose": [
             "echo -e '\n\n\n-----------------------------\n'$(date)'\n-----------------------------\n'",
+            "git reset --hard HEAD",
             "git pull origin master",
-            "git clean -df",
             "cp ./.env.prod ./.env",
             "composer install",
             "php bin/console cache:clear --env=prod --no-debug",
