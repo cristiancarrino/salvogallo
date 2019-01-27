@@ -1,7 +1,8 @@
-.homepage-card {
-  cursor: pointer;
+section {
+  margin: 2.5rem 0;
+  padding: 2.5rem;
 
-  &:hover {
-    box-shadow: 0 0 2rem 0 lightgrey;
+  &:nth-child(even) {
+    background: #f7f7f7;
   }
 }

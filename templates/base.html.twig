@@ -12,7 +12,7 @@
 
         <title itemprop='name'>{% block title %}Associazione Articolo 2{% endblock %}</title>
 
-        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+        <link href="{{ asset('build/app.css') }}" rel="stylesheet">
         {% block stylesheets %}{% endblock %}
     </head>
 
@@ -24,7 +24,9 @@
                 {% endblock %}
             </header>
             <main role="main">
-                {% block main %}{% endblock %}
+                <div class="main-content">
+                    {% block main %}{% endblock %}
+                </div>
             </main>
             <footer>
                 <!-- FOOTER -->

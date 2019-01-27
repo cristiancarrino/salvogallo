@@ -11,11 +11,21 @@ body {
     flex-grow: 1;
     display: flex;
     align-items: stretch;
+    flex-flow: row nowrap;
+
+    .main-content {
+      width: 100%;
+    }
   }
 }
 
 .locale-flag {
   height: 1.3rem;
+}
+
+.navbar-logo {
+  height: 1.5rem;
+  vertical-align: text-bottom;
 }
 
 .text-nolink {

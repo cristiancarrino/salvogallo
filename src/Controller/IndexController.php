@@ -13,7 +13,31 @@ class IndexController extends AbstractController
     /** @Route("/", name="index") */
     public function index()
     {
-        return $this->render('index/index.html.twig', array());
+        return $this->render('index/index.html.twig', array('page' => 'index'));
+    }
+
+    /** @Route("/cosa-facciamo", name="what") */
+    public function what()
+    {
+        return $this->render('index/what.html.twig', array('page' => 'what'));
+    }
+
+    /** @Route("/progetti-eventi", name="projects") */
+    public function projects()
+    {
+        return $this->render('index/projects.html.twig', array('page' => 'projects'));
+    }
+
+    /** @Route("/extra-italiani", name="extra") */
+    public function extra()
+    {
+        return $this->render('index/extra.html.twig', array('page' => 'extra'));
+    }
+
+    /** @Route("/contatti", name="contacts") */
+    public function contacts()
+    {
+        return $this->render('index/contacts.html.twig', array('page' => 'contacts'));
     }
 
     /** @Route("/locale/{_locale}", name="locale", requirements={"_locale": "%locales%"}) */

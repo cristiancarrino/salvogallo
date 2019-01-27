@@ -6,7 +6,11 @@ window.$ = require('jquery');
 
 require('bootstrap');
 
+require('jquery.scrollbar');
+
 $(document).ready(function() {
+    $('.main-content').scrollbar();
+
     $('[data-href]').click(function(event){
         window.location = $(this).data('href');
     });
