@@ -2,10 +2,14 @@
 
 namespace App\Controller;
 
+use App\Form\ContactUsType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use DateTime;
+
+// Annotations
 use Symfony\Component\Routing\Annotation\Route;
 
 class IndexController extends AbstractController
@@ -34,10 +38,29 @@ class IndexController extends AbstractController
         return $this->render('index/extra.html.twig', array('page' => 'extra'));
     }
 
-    /** @Route("/contatti", name="contacts") */
-    public function contacts()
+    /** @Route("/contatti", name="contacts")
+     *  @throws \Exception
+     */
+    public function contacts(Request $request)
     {
-        return $this->render('index/contacts.html.twig', array('page' => 'contacts'));
+        $form = $this->createForm(ContactUsType::class);
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+
+//            $em = $this->getDoctrine()->getManager();
+//            $message->setDate(new DateTime());
+//            $em->persist($message);
+//            $em->flush();
+
+            $this->addFlash('success','message.sent.success');
+            return $this->redirect($request->getUri());
+        }
+
+        return $this->render('index/contacts.html.twig', array(
+            'page' => 'contacts',
+            'form' => $form->createView()
+        ));
     }
 
     /** @Route("/locale/{_locale}", name="locale", requirements={"_locale": "%locales%"}) */

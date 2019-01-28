@@ -1,8 +1,29 @@
+@import "app";
 section {
   margin: 2.5rem 0;
   padding: 2.5rem;
 
   &:nth-child(even) {
     background: #f7f7f7;
+  }
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider, .featurette-container {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette {
+  align-items: center;
+
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    color: $primary;
+    margin-bottom: 1rem;
   }
 }
