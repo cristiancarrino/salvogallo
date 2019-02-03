@@ -1,196 +1,119 @@
 {% extends 'base.html.twig' %}
 
-{% block stylesheets %}<link href="{{ asset('build/homepage.css') }}" rel="stylesheet">{% endblock %}
-
 {% block main %}
-    <section>
-        <div class="container">
-            <h1>Azioni Legali</h1>
-            <p>Articolo 2 consapevole dell’importanza e della difficoltà
-                della battaglia per la tutela dei diritti avanzati si avvale di
-                un team di professionisti volontari dedicato allo studio dei
-                fondamenti normativi e giuridici a sostegno delle proprie
-                richieste e delle strategie atte a farli valere.</p>
-            <p>L 'obiettivo di tutelare i diritti e, più in generale, di vigilare
-                sulla salvaguardia delle libertà fondamentali e della
-                legalità, ha condotto Articolo 2 ad affidare la gestione
-                delle proprie attività e delle consulenze a diversi studi
-                legali, composti da una moltitudine di avvocati, con
-                molteplici competenze e quindi in grado di soddisfare tutte
-                le esigenze in termini di assistenza legale e di consulenza
-                sulle delicate e complesse questioni che i cittadini.</p>
-            <p>Gli avvocati di cui si avvale l’Associazione Articolo 2
-                garantiscono agli associati la massima preparazione,
-                competenza ed esperienza nei seguenti settori:</p>
-            <ul>
-                <li>Diritto amministrativo;</li>
-                <li>Diritto del lavoro;</li>
-                <li>Diritto civile;</li>
-                <li>Responsabilità medica;</li>
-                <li>Responsabilità assicurativa;</li>
-                <li>Mutui e tassi di interesse;</li>
-                <li>Diritto europea e diritto internazionale.</li>
-            </ul>
-            <p>Gli avvocati sono scelti per l’aver conseguito numerose
-                vittorie nell'ambito dei giudizi affidati, in favore del diritto
-                e della legalità. La loro preziosa collaborazione va ben
-                oltre la semplice assistenza legale, ma diventa una vera e​
-                propria assistenza personalizzata che pone al centro la
-                persona.</p>
-        </div>
-    </section>
+    <div class="container">
+        <!-- START THE FEATURETTES -->
+        <div class="featurette-container">
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img class="featurette-image w-100 border" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_1' | trans({}, 'what') }}">
+                    <p class="text-muted">{{ 'caption_1' | trans({}, 'what') }}</p>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'lawsuits' | trans({}, 'what') }}</h2>
 
-    <section>
-        <div class="container">
-            <h1>Permesso di soggiorno</h1>
-            <p>Il permesso di soggiorno è un’autorizzazione rilasciata
-                dalla autorità di polizia italiana, che consente ad un
-                cittadino straniero di soggiornare in Italia. Gli stranieri
-                che intendono soggiornare in Italia per un periodo
-                superiore a tre mesi devono richiedere il permesso di
-                soggiorno entro 8 giorni dall’ingresso in Italia o
-                dall’ingresso in uno stato Schengen.</p>
-            <p>La legge italiana conosce le seguenti tipologie di permesso
-                di soggiorno:</p>
-            <ul>
-                <li>Affidamento;</li>
-                <li>Attesa occupazione;</li>
-                <li>Attesa riacquisto cittadinanza;</li>
-                <li>Attività sportiva professionale;</li>
-                <li>Asilo politico;</li>
-                <li>Cure mediche;</li>
-                <li>Famiglia</li>
-                <li>Minore 14-18 anni</li>
-                <li>Lavoro autonomo</li>
-                <li>Lavoro stagionale</li>
-                <li>Lavoratori speciali</li>
-                <li>Lavoro subordinato</li>
-                <li>Missione</li>
-                <li>Motivi religiosi</li>
-                <li>Motivi umanitari</li>
-                <li>Permesso UE lungo soggiornanti</li>
-                <li>Ricerca scientifica</li>
-                <li>Richiesta protezione internazionale</li>
-                <li>Ricongiungimento familiare</li>
-                <li>Residenza elettiva</li>
-                <li>Studio​</li>
-                <li>Status apolide</li>
-                <li>Tirocinio professionale</li>
-                <li>Protezione sussidiaria</li>
-                <li>Giustizia</li>
-                <li>Carta di soggiorno familiari cittadino UE.</li>
-            </ul>
-            <p>Se hai dei dubbi sulla tua situazione e vuoi comprendere
-                come tutelarti, richiedi un appuntamento gratuito.</p>
-        </div>
-    </section>
+                    {{ 'lawsuits_text' | trans({}, 'what') | raw }}
+                </div>
+            </div>
 
-    <section>
-        <div class="container">
-            <h1>Carta di soggiorno</h1>
-            <p>La Carta di Soggiorno per cittadini stranieri (oggi
-                Permesso di soggiorno UE per soggiornanti di lungo
-                periodo) è l’autorizzazione a soggiornare, all’interno
-                dell’area Schengen, a tempo indeterminato.</p>
-            <p>La Carta di Soggiorno può essere richiesta dallo straniero
-                che: sia regolarmente soggiornante in Italia da almeno 5
-                anni; dimostri la disponibilità di un reddito non inferiore
-                all’importo annuo dell’assegno sociale e di un alloggio
-                idoneo che rientri nei parametri minimi previsti dalla
-                legge regionale; non sia incorso in gravi illeciti; abbia
-                superato con esito positivo il test di conoscenza della
-                lingua italiana.</p>
-            <p>Hai ancora dei dubbi sulla tua posizione? Contattaci
-                subito.</p>
-        </div>
-    </section>
+            <hr class="featurette-divider">
 
-    <section>
-        <div class="container">
-            <h1>Cittadinanza</h1>
-            <p>La cittadinanza italiana si basa sul principio dello "ius
-                sanguinis " (diritto di sangue) per il quale il figlio nato da​
-                padre italiano o da madre italiana è anch'esso italiano. I
-                cittadini stranieri, tuttavia, possono acquistarla se in
-                possesso di determinati requisiti. La materia è attualmente
-                regolata dalla legge n. 91 del 5 febbraio 1992, come
-                modificata dalla legge 94 del 2009, e successivi
-                regolamenti.</p>
-            <p>Puoi chiedere la cittadinanza italiana per matrimonio con
-                cittadino italiano; per residenza in Italia o se hai ottenuto
-                il riconoscimento dello status di rifugiato.</p>
-            <p>Il Decreto Sicurezza (c.d. Decreto Salvini) ha modificato la
-                materia e previsto nuove regole.</p>
-            <p>Hai ancora dei dubbi sulla tua posizione? Contattaci
-                subito.</p>
-        </div>
-    </section>
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'residency_permit' | trans({}, 'what') }}</h2>
 
-    <section>
-        <div class="container">
-            <h1>Visti per l’ingresso</h1>
-            <p>I cittadini che non appartengono ai Paesi membri
-                dell’Unione Europea possono entrare in Italia presentando
-                il passaporto e, nei casi in cui è richiesto, il visto rilasciato
-                dalla rappresentanza diplomatica italiana.</p>
-            <p>La legge riconosce agli stranieri che vogliono recarsi in
-                Italia per lavoro o per motivi di turismo/famiglia le
-                seguenti tipologie:</p>
-            <ul>
-                <li>Visto per adozione</li>
-                <li>Visto per affari</li>
-                <li>Visto per cure mediche</li>
-                <li>Visto diplomatico per accreditamento o notifica</li>
-                <li>Visto per gara sportiva</li>
-                <li>Visto per invito</li>
-                <li>Visto per lavoro autonomo</li>
-                <li>Visto per lavoro subordinato​</li>
-                <li>Visto per missione</li>
-                <li>Visto per motivi familiari</li>
-                <li>Visto per motivi religiosi</li>
-                <li>Visto di reingresso</li>
-                <li>Visto per residenza elettiva</li>
-                <li>Visto per ricerca</li>
-                <li>Visto per studio</li>
-                <li>Visto per transito aeroportuale</li>
-                <li>Visto per transito</li>
-                <li>Visto per trasporto</li>
-                <li>Visto per turismo</li>
-                <li>Visto per vacanze - lavoro</li>
-                <li>Visto per volontariato</li>
-            </ul>
-        </div>
-    </section>
+                    {{ 'residency_permit_text' | trans({}, 'what') | raw }}
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image w-100" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_2' | trans({}, 'what') }}">
+                    <p class="text-muted">{{ 'caption_2' | trans({}, 'what') }}</p>
+                </div>
+            </div>
 
-    <section>
-        <div class="container">
-            <h1>Ricongiungimento familiare</h1>
-            <p>La Costituzione italiana riconosce i diritti fondamentali
-                della famiglia quale società naturale fondata sul
-                matrimonio.</p>
-            <p>Hai dei dubbi sulla procedura? Contatta l’Associazione
-                Articolo 2.</p>
-        </div>
-    </section>
+            <hr class="featurette-divider">
 
-    <section>
-        <div class="container">
-            <h1>Coesione familiare</h1>
-            <p>Sei arrivato in Italia, ti sei ricongiunto ai tuoi familiari e
-                vuoi ottenere un permesso di soggiorno? Chiedi
-                all’Associazione Articolo 2 come ottenere un permesso di
-                soggiorno per i tuoi cari.</p>
-        </div>
-    </section>
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img class="featurette-image w-100 border" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_3' | trans({}, 'what') }}">
+                    <p class="text-muted">{{ 'caption_3' | trans({}, 'what') }}</p>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'residence_card' | trans({}, 'what') }}</h2>
 
-    <section>
-        <div class="container">
-            <h1>Asilo politico e Protezione Internazionale</h1>
-            <p>Sei giunto in Italia per sottrarti a persecuzioni o rischi di
-                un danno grave alla tua persona? Chiamaci e ti
-                accompagneremo nel corso della procedura per chiedere il​
-                riconoscimento della protezione internazionale, dell'asilo
-                politico o della protezione sussidiaria.</p>
+                    {{ 'residence_card_text' | trans({}, 'what') | raw }}
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'citizenship' | trans({}, 'what') }}</h2>
+
+                    {{ 'citizenship_text' | trans({}, 'what') | raw }}
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image w-100" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_4' | trans({}, 'what') }}">
+                    <p class="text-muted">{{ 'caption_4' | trans({}, 'what') }}</p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img class="featurette-image w-100 border" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_5' | trans({}, 'what') }}">
+                    <p class="text-muted">{{ 'caption_5' | trans({}, 'what') }}</p>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'visas_for_entry' | trans({}, 'what') }}</h2>
+
+                    {{ 'visas_for_entry_text' | trans({}, 'what') | raw }}
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'family_reunification' | trans({}, 'what') }}</h2>
+
+                    {{ 'family_reunification_text' | trans({}, 'what') | raw }}
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image w-100" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_6' | trans({}, 'what') }}">
+                    <p class="text-muted">{{ 'caption_6' | trans({}, 'what') }}</p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img class="featurette-image w-100 border" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_7' | trans({}, 'what') }}">
+                    <p class="text-muted">{{ 'caption_7' | trans({}, 'what') }}</p>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'family_cohesion' | trans({}, 'what') }}</h2>
+
+                    {{ 'family_cohesion_text' | trans({}, 'what') | raw }}
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'international_protection' | trans({}, 'what') }}</h2>
+
+                    {{ 'international_protection_text' | trans({}, 'what') | raw }}
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image w-100" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_8' | trans({}, 'what') }}">
+                    <p class="text-muted">{{ 'caption_8' | trans({}, 'what') }}</p>
+                </div>
+            </div>
         </div>
-    </section>
+        <!-- /END THE FEATURETTES -->
+    </div>
 {% endblock %}

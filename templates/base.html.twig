@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Associazione Articolo 2 website">
+        <meta name="description" content="Associazione Articolo 2 Website">
         <meta name="author" content="Cristian Carrino (www.cristiancarrino.it)">
         <link rel="icon" href="{{ asset('favicon.png') }}">
 
-        <!--<link rel="canonical" href="http://cristiancarrino.it" itemprop="url">-->
-
         <title itemprop='name'>{% block title %}Associazione Articolo 2{% endblock %}</title>
+
+        <script src="{{ asset('build/app.js') }}"></script>
 
         <link href="{{ asset('build/app.css') }}" rel="stylesheet">
         {% block stylesheets %}{% endblock %}
@@ -24,9 +24,8 @@
                 {% endblock %}
             </header>
             <main role="main">
-                <div class="main-content" id="main-content">
-                    {% block main %}{% endblock %}
-                </div>
+                {#{% block flash_messages %}{{ include('flash_messages.html.twig') }}{% endblock %}#}
+                {% block main %}{% endblock %}
             </main>
             <footer>
                 <!-- FOOTER -->
@@ -36,7 +35,6 @@
             </footer>
         </body>
 
-        <script src="{{ asset('build/app.js') }}"></script>
         {% block javascripts %}{% endblock %}
     {% endblock %}
 </html>

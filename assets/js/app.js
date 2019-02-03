@@ -5,20 +5,10 @@ require('../css/app.scss');
 window.$ = require('jquery');
 
 require('bootstrap');
+// require('select2');
+// require('bootstrap4-notify');
 
-require('jquery.scrollbar');
-
-//$('.main-content').scrollbar();
-// $('header [href]').click(function(event) {
-//     event.preventDefault();
-//     $('header [href]').removeClass('active');
-//     $(this).addClass('active');
-//
-//     var href = $(this).attr('href');
-// });
 $(document).ready(function() {
-
-    $('[data-href]').click(function(event){
-        window.location = $(this).data('href');
-    });
+    // $('[data-widget="select2"]').select2();
+    $('[data-toggle="tooltip"]').tooltip();
 });

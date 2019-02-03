@@ -1,56 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block stylesheets %}<link href="{{ asset('build/homepage.css') }}" rel="stylesheet">{% endblock %}
-
 {% block main %}
-    {#<section>#}
-        {#<div class="container">#}
-            {#<h1>Assistenza online</h1>#}
-            {#<p>Se hai un problema con il tuo titolo di soggiorno, chiama#}
-                {#subito Associazione Articolo 2 al numero fisso:#}
-                {#02.49452709 o al numero di cellulare: 3491309983.</p> ​#}
-            {#<p>Oppure vienici a trovare in via Settala, 84 (ingresso via#}
-                {#Scarlatti, 11): siamo aperti tutti i giorni, dal lunedì al#}
-                {#venerdì, dalle ore 9:00 alle ore 13:00 e dalle ore 14:00 alle#}
-                {#ore 18:00.</p>#}
-            {#<p>Ti aspettiamo!</p>#}
-        {#</div>#}
-    {#</section>#}
-
-    {#<section>#}
-        {#<div class="container">#}
-            {#<h1>Contatti</h1>#}
-            {#<p>Tel: 02.49452709 - 3491309983<br>#}
-                {#Email: <a href="mailto:info@articolo2.com">info@articolo2.com</a><br>#}
-                {#Indirizzo: Via Settala, 84 (Ingresso da via Scarlatti 11), Milano</p>#}
-        {#</div>#}
-    {#</section>#}
     <div class="container">
         <div class="featurette-container">
-            {#<div class="row featurette facebook text-center text-sm-left">#}
-                {#<div class="col-sm-auto mb-3 mb-sm-0">#}
-                    {#<img src="{{ asset('img/facebook.png') }}" width="130px" style="margin: 0 10px">#}
-                {#</div>#}
-                {#<div class="col">#}
-                    {#<h2 class="featurette-heading">Assistenza online</h2>#}
-                    {#<p>Se hai un problema con il tuo titolo di soggiorno, chiama subito Associazione Articolo 2 al numero fisso: 02.49452709 o al numero di cellulare: 3491309983.</p> ​#}
-                    {#<p>Oppure vienici a trovare in via Settala, 84 (ingresso via Scarlatti, 11): siamo aperti tutti i giorni, dal lunedì al venerdì, dalle ore 9:00 alle ore 13:00 e dalle ore 14:00 alle ore 18:00.</p>#}
-                    {#<p>Ti aspettiamo!</p>#}
-                {#</div>#}
-            {#</div>#}
-
-            {#<hr class="featurette-divider">#}
-
             <div class="row featurette whatsapp text-center text-sm-left">
                 <div class="col-sm-auto mb-3 mb-sm-0">
                     <img src="{{ asset('img/whatsapp.png') }}" width="150px">
                 </div>
                 <div class="col">
-                    <h2 class="featurette-heading">Contattaci</h2>
-                    <p class="lead">Tel: <a href="tel:0249452709"><strong>02.49452709</strong></a></p>
-                    <p class="lead">Cell: <a href="tel:3491309983"><strong>3491309983</strong></a></p>
-                    <p class="lead">Orario di apertura segreteria:<br>
-                        Lun e Ven: 9:00-13:00 / 14:00-18:00</p>
+                    <h2 class="featurette-heading">{{ 'contact_us' | trans({}, 'contacts') }}</h2>
+                    {{ 'contact_us_text' | trans({}, 'contacts') | raw }}
                 </div>
             </div>
 
@@ -61,7 +20,7 @@
                     <img src="{{ asset('img/email.png') }}" width="150px">
                 </div>
                 <div class="col">
-                    <h2 class="featurette-heading">Scrivici. Manda una mail o usa questo modulo</h2>
+                    <h2 class="featurette-heading">{{ 'write_us' | trans({}, 'contacts') }}</h2>
                     <p class="lead my-5">Mail: <a href="mailto:info@articolo2.com"><strong>info@articolo2.com</strong></a></p>
 
                     {{ form_start(form, {attr: {novalidate: 'novalidate'}}) }}
@@ -72,14 +31,14 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette gmail text-center text-sm-left">
+            <div class="row featurette text-center text-sm-left">
                 <div class="col-sm-auto mb-3 mb-sm-0">
                     <img src="{{ asset('img/position.png') }}" width="150px">
                 </div>
                 <div class="col">
-                    <h2 class="featurette-heading">Vienici a trovare</h2>
+                    <h2 class="featurette-heading">{{ 'write_us' | trans({}, 'contacts') }}</h2>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.3494523352174!2d9.206402315558082!3d45.48290727910113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6c3735cf3e5%3A0x4fc9cc110d89e104!2sVia+Lodovico+Settala%2C+84%2C+20124+Milano+MI!5e0!3m2!1sit!2sit!4v1548682103041" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    <p class="lead">Indirizzo: Via Settala 84, Milano (MI) - (Ingresso da via Scarlatti 11)</p>
+                    <p class="lead">{{ 'come_to_us_text' | trans({}, 'contacts') }}</p>
                 </div>
             </div>
         </div>
