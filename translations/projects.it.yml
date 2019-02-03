@@ -1,21 +1,9 @@
 art2_informs: "ART 2 Informa"
-art2_informs_text: "<p class=\"lead\">Articolo 2 sostiene i suoi associati nelle battaglie per la
-                                    tutela dei propri diritti; per tale ragione, l’associazione si
-                                    avvale di un team di professionisti volontari e di avvocati a
-                                    sostegno delle legittime richieste e istanze avanzate.</p>
-                                <p class=\"lead\">In questa sezione, riportiamo, le vittorie ottenute da
-                                    Articolo 2 a sostegno dei suoi assistiti e alcune sentenze di
-                                    approfondimento.</p>
+art2_informs_text: "<p class=\"lead\">Articolo 2 sostiene i suoi associati nelle battaglie per la tutela dei propri diritti; per tale ragione, l’associazione si avvale di un team di professionisti volontari e di avvocati a sostegno delle legittime richieste e istanze avanzate.</p>
+                                <p class=\"lead\">In questa sezione, riportiamo, le vittorie ottenute da Articolo 2 a sostegno dei suoi assistiti e alcune sentenze di approfondimento.</p>
                                 <p class=\"lead\">
-                                    <a href=\"http://www.articolo2.com/2017/12/21/va-concesso-il-nulla-osta-al-ricongiungimento-familiare-in-caso-di-kafalah/\">Va
-                     concesso il nulla osta al ricongiungimento familiare in caso di Kafalah</a></p>
-                     <p class=\"lead\">“Non può essere negato il nulla osta al ricongiungimento
-                     familiare di minore affidato a cittadino italiano attraverso
-                     la procedura della Kafalah, istituto giuridico di origine
-                     islamica per l’affidamento dei minori in stato di
-                     abbandono, in quanto – a prescindere dallo strumento
-                     utilizzato – l’interesse alla tutela del minore deve trovare
-                     piena soddisfazione”.</p>
+                                    <a href=\"http://www.articolo2.com/2017/12/21/va-concesso-il-nulla-osta-al-ricongiungimento-familiare-in-caso-di-kafalah/\">Va concesso il nulla osta al ricongiungimento familiare in caso di Kafalah</a></p>
+                     <p class=\"lead\">“Non può essere negato il nulla osta al ricongiungimento familiare di minore affidato a cittadino italiano attraverso la procedura della Kafalah, istituto giuridico di origine islamica per l’affidamento dei minori in stato di abbandono, in quanto – a prescindere dallo strumento utilizzato – l’interesse alla tutela del minore deve trovare piena soddisfazione”.</p>
                      <p class=\"lead\"><a href=\"http://www.articolo2.com/2017/12/21/protezione-internazionale-e-persecuzioni-di-genere/\">Protezione
                      internazionale e persecuzioni di genere</a></p>
                      <p class=\"lead\">Va concessa la protezione internazionale alle donne che
@@ -95,13 +83,13 @@ art2_informs_text: "<p class=\"lead\">Articolo 2 sostiene i suoi associati nelle
                      della definizione del procedimento di emersione da [...]</p>
   "
 events: "Eventi"
-events_text: "<p>Articolo 2, da sempre impegnata a favore della tutela dei
+events_text: "<p class=\"lead\">Articolo 2, da sempre impegnata a favore della tutela dei
                               suoi associati, partecipa a numerosi eventi volti a
                               sensibilizzare sulla tutela della legalità e rispetto dei
                               diritti.</p>
 "
 collaborations: "Collaborazioni"
-collaborations_text: "<p>Articolo 2 collabora con numerosi partners per
+collaborations_text: "<p class=\"lead\">Articolo 2 collabora con numerosi partners per
                                       raggiungere un comune obiettivo: la tutela dei diritti dei
                                       suoi associati.</p>
                                   <p>È in questa chiave che Articolo 2 mette a disposizione le
@@ -110,12 +98,12 @@ collaborations_text: "<p>Articolo 2 collabora con numerosi partners per
                                       Contattaci e valutiamolo insieme.</p>
 "
 networking: "Networking"
-networking_text: "<p>Articolo 2 collabora con numerose realtà ed enti, essendo
+networking_text: "<p class=\"lead\">Articolo 2 collabora con numerose realtà ed enti, essendo
                                    referente di numerose associazioni di consumatori,
                                    patronati e CAF per la tutela dei diritti dei propri associati.</p>
-                               <p>Se anche tu hai un’organizzazione e vuoi collaborare con
+                               <p class=\"lead\">Se anche tu hai un’organizzazione e vuoi collaborare con
                                    noi, contattaci e valutiamo insieme le opportunità.</p>
-                               <p>Collaborano con noi:<br>
+                               <p class=\"lead\">Collaborano con noi:<br>
                                    <b>Studio Legale Preti & Partners</b></p>"
 caption_1: "Didascalia 1"
 caption_2: "Didascalia 2"

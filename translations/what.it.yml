@@ -1,5 +1,5 @@
 lawsuits: "Azioni Legali"
-lawsuits_text: "<p>Articolo 2 consapevole dell’importanza e della difficoltà della battaglia per la tutela dei diritti avanzati si avvale di un team di professionisti volontari dedicato allo studio dei fondamenti normativi e giuridici a sostegno delle proprie richieste e delle strategie atte a farli valere.</p>
+lawsuits_text: "<p class=\"lead\">Articolo 2 consapevole dell’importanza e della difficoltà della battaglia per la tutela dei diritti avanzati si avvale di un team di professionisti volontari dedicato allo studio dei fondamenti normativi e giuridici a sostegno delle proprie richieste e delle strategie atte a farli valere.</p>
   <p class=\"lead\">L 'obiettivo di tutelare i diritti e, più in generale, di vigilare sulla salvaguardia delle libertà fondamentali e della legalità, ha condotto Articolo 2 ad affidare la gestione delle proprie attività e delle consulenze a diversi studi legali, composti da una moltitudine di avvocati, con molteplici competenze e quindi in grado di soddisfare tutte le esigenze in termini di assistenza legale e di consulenza sulle delicate e complesse questioni che i cittadini.</p>
   <p class=\"lead\">Gli avvocati di cui si avvale l’Associazione Articolo 2 garantiscono agli associati la massima preparazione, competenza ed esperienza nei seguenti settori:</p>
   <ul>
@@ -14,128 +14,84 @@ lawsuits_text: "<p>Articolo 2 consapevole dell’importanza e della difficoltà 
   <p class=\"lead\">Gli avvocati sono scelti per l’aver conseguito numerose vittorie nell'ambito dei giudizi affidati, in favore del diritto e della legalità. La loro preziosa collaborazione va ben oltre la semplice assistenza legale, ma diventa una vera e​ propria assistenza personalizzata che pone al centro la persona.</p>
 "
 residency_permit: "Permesso di soggiorno"
-residency_permit_text: "<p class=\"lead\">Il permesso di soggiorno è un’autorizzazione rilasciata
-                                        dalla autorità di polizia italiana, che consente ad un
-                                        cittadino straniero di soggiornare in Italia. Gli stranieri
-                                        che intendono soggiornare in Italia per un periodo
-                                        superiore a tre mesi devono richiedere il permesso di
-                                        soggiorno entro 8 giorni dall’ingresso in Italia o
-                                        dall’ingresso in uno stato Schengen.</p>
-                                    <p class=\"lead\">La legge italiana conosce le seguenti tipologie di permesso
-                                        di soggiorno:</p>
-                                    <ul>
-                                        <li class=\"lead\">Affidamento;</li>
-                                        <li class=\"lead\">Attesa occupazione;</li>
-                                        <li class=\"lead\">Attesa riacquisto cittadinanza;</li>
-                                        <li class=\"lead\">Attività sportiva professionale;</li>
-                                        <li class=\"lead\">Asilo politico;</li>
-                                        <li class=\"lead\">Cure mediche;</li>
-                                        <li class=\"lead\">Famiglia</li>
-                                        <li class=\"lead\">Minore 14-18 anni</li>
-                                        <li class=\"lead\">Lavoro autonomo</li>
-                                        <li class=\"lead\">Lavoro stagionale</li>
-                                        <li class=\"lead\">Lavoratori speciali</li>
-                                        <li class=\"lead\">Lavoro subordinato</li>
-                                        <li class=\"lead\">Missione</li>
-                                        <li class=\"lead\">Motivi religiosi</li>
-                                        <li class=\"lead\">Motivi umanitari</li>
-                                        <li class=\"lead\">Permesso UE lungo soggiornanti</li>
-                                        <li class=\"lead\">Ricerca scientifica</li>
-                                        <li class=\"lead\">Richiesta protezione internazionale</li>
-                                        <li class=\"lead\">Ricongiungimento familiare</li>
-                                        <li class=\"lead\">Residenza elettiva</li>
-                                        <li class=\"lead\">Studio​</li>
-                                        <li class=\"lead\">Status apolide</li>
-                                        <li class=\"lead\">Tirocinio professionale</li>
-                                        <li class=\"lead\">Protezione sussidiaria</li>
-                                        <li class=\"lead\">Giustizia</li>
-                                        <li class=\"lead\">Carta di soggiorno familiari cittadino UE.</li>
-                                    </ul>
-                                    <p class=\"lead\">Se hai dei dubbi sulla tua situazione e vuoi comprendere
-                                        come tutelarti, richiedi un appuntamento gratuito.</p>
+residency_permit_text: "<p class=\"lead\">Il permesso di soggiorno è un’autorizzazione rilasciata dalla autorità di polizia italiana, che consente ad un cittadino straniero di soggiornare in Italia. Gli stranieri che intendono soggiornare in Italia per un periodo superiore a tre mesi devono richiedere il permesso di soggiorno entro 8 giorni dall’ingresso in Italia o dall’ingresso in uno stato Schengen.</p>
+  <p class=\"lead\">La legge italiana conosce le seguenti tipologie di permesso di soggiorno:</p>
+  <ul>
+      <li class=\"lead\">Affidamento;</li>
+      <li class=\"lead\">Attesa occupazione;</li>
+      <li class=\"lead\">Attesa riacquisto cittadinanza;</li>
+      <li class=\"lead\">Attività sportiva professionale;</li>
+      <li class=\"lead\">Asilo politico;</li>
+      <li class=\"lead\">Cure mediche;</li>
+      <li class=\"lead\">Famiglia</li>
+      <li class=\"lead\">Minore 14-18 anni</li>
+      <li class=\"lead\">Lavoro autonomo</li>
+      <li class=\"lead\">Lavoro stagionale</li>
+      <li class=\"lead\">Lavoratori speciali</li>
+      <li class=\"lead\">Lavoro subordinato</li>
+      <li class=\"lead\">Missione</li>
+      <li class=\"lead\">Motivi religiosi</li>
+      <li class=\"lead\">Motivi umanitari</li>
+      <li class=\"lead\">Permesso UE lungo soggiornanti</li>
+      <li class=\"lead\">Ricerca scientifica</li>
+      <li class=\"lead\">Richiesta protezione internazionale</li>
+      <li class=\"lead\">Ricongiungimento familiare</li>
+      <li class=\"lead\">Residenza elettiva</li>
+      <li class=\"lead\">Studio​</li>
+      <li class=\"lead\">Status apolide</li>
+      <li class=\"lead\">Tirocinio professionale</li>
+      <li class=\"lead\">Protezione sussidiaria</li>
+      <li class=\"lead\">Giustizia</li>
+      <li class=\"lead\">Carta di soggiorno familiari cittadino UE.</li>
+  </ul>
+  <p class=\"lead\">Se hai dei dubbi sulla tua situazione e vuoi comprendere come tutelarti, richiedi un appuntamento gratuito.</p>
 "
 residence_card: "Carta di soggiorno"
-residence_card_text: "<p class=\"lead\">La Carta di Soggiorno per cittadini stranieri (oggi
-                                      Permesso di soggiorno UE per soggiornanti di lungo
-                                      periodo) è l’autorizzazione a soggiornare, all’interno
-                                      dell’area Schengen, a tempo indeterminato.</p>
-                                  <p class=\"lead\">La Carta di Soggiorno può essere richiesta dallo straniero
-                                      che: sia regolarmente soggiornante in Italia da almeno 5
-                                      anni; dimostri la disponibilità di un reddito non inferiore
-                                      all’importo annuo dell’assegno sociale e di un alloggio
-                                      idoneo che rientri nei parametri minimi previsti dalla
-                                      legge regionale; non sia incorso in gravi illeciti; abbia
-                                      superato con esito positivo il test di conoscenza della
-                                      lingua italiana.</p>
-                                  <p class=\"lead\">Hai ancora dei dubbi sulla tua posizione? Contattaci
-                                      subito.</p>
+residence_card_text: "<p class=\"lead\">La Carta di Soggiorno per cittadini stranieri (oggi Permesso di soggiorno UE per soggiornanti di lungo periodo) è l’autorizzazione a soggiornare, all’interno dell’area Schengen, a tempo indeterminato.</p>
+  <p class=\"lead\">La Carta di Soggiorno può essere richiesta dallo straniero che: sia regolarmente soggiornante in Italia da almeno 5 anni; dimostri la disponibilità di un reddito non inferiore all’importo annuo dell’assegno sociale e di un alloggio idoneo che rientri nei parametri minimi previsti dalla legge regionale; non sia incorso in gravi illeciti; abbia superato con esito positivo il test di conoscenza della lingua italiana.</p>
+  <p class=\"lead\">Hai ancora dei dubbi sulla tua posizione? Contattaci subito.</p>
 "
 citizenship: "Cittadinanza"
-citizenship_text: "<p class=\"lead\">La cittadinanza italiana si basa sul principio dello \"ius
-                    sanguinis \" (diritto di sangue) per il quale il figlio nato da​
-                    padre italiano o da madre italiana è anch'esso italiano. I
-                    cittadini stranieri, tuttavia, possono acquistarla se in
-                    possesso di determinati requisiti. La materia è attualmente
-                    regolata dalla legge n. 91 del 5 febbraio 1992, come
-                    modificata dalla legge 94 del 2009, e successivi
-                    regolamenti.</p>
-                    <p class=\"lead\">Puoi chiedere la cittadinanza italiana per matrimonio con
-                    cittadino italiano; per residenza in Italia o se hai ottenuto
-                    il riconoscimento dello status di rifugiato.</p>
-                    <p class=\"lead\">Il Decreto Sicurezza (c.d. Decreto Salvini) ha modificato la
-                    materia e previsto nuove regole.</p>
-                    <p class=\"lead\">Hai ancora dei dubbi sulla tua posizione? Contattaci
-                    subito.</p>
+citizenship_text: "<p class=\"lead\">La cittadinanza italiana si basa sul principio dello \"ius sanguinis \" (diritto di sangue) per il quale il figlio nato da​ padre italiano o da madre italiana è anch'esso italiano. I cittadini stranieri, tuttavia, possono acquistarla se in possesso di determinati requisiti. La materia è attualmente regolata dalla legge n. 91 del 5 febbraio 1992, come modificata dalla legge 94 del 2009, e successivi regolamenti.</p>
+  <p class=\"lead\">Puoi chiedere la cittadinanza italiana per matrimonio con cittadino italiano; per residenza in Italia o se hai ottenuto il riconoscimento dello status di rifugiato.</p>
+  <p class=\"lead\">Il Decreto Sicurezza (c.d. Decreto Salvini) ha modificato la materia e previsto nuove regole.</p>
+  <p class=\"lead\">Hai ancora dei dubbi sulla tua posizione? Contattaci subito.</p>
 "
 visas_for_entry: "Visti per l’ingresso"
-visas_for_entry_teext: "<p class=\"lead\">I cittadini che non appartengono ai Paesi membri
-                                        dell’Unione Europea possono entrare in Italia presentando
-                                        il passaporto e, nei casi in cui è richiesto, il visto rilasciato
-                                        dalla rappresentanza diplomatica italiana.</p>
-                                    <p class=\"lead\">La legge riconosce agli stranieri che vogliono recarsi in
-                                        Italia per lavoro o per motivi di turismo/famiglia le
-                                        seguenti tipologie:</p>
-                                    <ul>
-                                        <li class=\"lead\">Visto per adozione</li>
-                                        <li class=\"lead\">Visto per affari</li>
-                                        <li class=\"lead\">Visto per cure mediche</li>
-                                        <li class=\"lead\">Visto diplomatico per accreditamento o notifica</li>
-                                        <li class=\"lead\">Visto per gara sportiva</li>
-                                        <li class=\"lead\">Visto per invito</li>
-                                        <li class=\"lead\">Visto per lavoro autonomo</li>
-                                        <li class=\"lead\">Visto per lavoro subordinato​</li>
-                                        <li class=\"lead\">Visto per missione</li>
-                                        <li class=\"lead\">Visto per motivi familiari</li>
-                                        <li class=\"lead\">Visto per motivi religiosi</li>
-                                        <li class=\"lead\">Visto di reingresso</li>
-                                        <li class=\"lead\">Visto per residenza elettiva</li>
-                                        <li class=\"lead\">Visto per ricerca</li>
-                                        <li class=\"lead\">Visto per studio</li>
-                                        <li class=\"lead\">Visto per transito aeroportuale</li>
-                                        <li class=\"lead\">Visto per transito</li>
-                                        <li class=\"lead\">Visto per trasporto</li>
-                                        <li class=\"lead\">Visto per turismo</li>
-                                        <li class=\"lead\">Visto per vacanze - lavoro</li>
-                                        <li class=\"lead\">Visto per volontariato</li>
-                                    </ul>
+visas_for_entry_text: "<p class=\"lead\">I cittadini che non appartengono ai Paesi membri dell’Unione Europea possono entrare in Italia presentando il passaporto e, nei casi in cui è richiesto, il visto rilasciato dalla rappresentanza diplomatica italiana.</p>
+  <p class=\"lead\">La legge riconosce agli stranieri che vogliono recarsi in Italia per lavoro o per motivi di turismo/famiglia le seguenti tipologie:</p>
+  <ul>
+    <li class=\"lead\">Visto per adozione</li>
+    <li class=\"lead\">Visto per affari</li>
+    <li class=\"lead\">Visto per cure mediche</li>
+    <li class=\"lead\">Visto diplomatico per accreditamento o notifica</li>
+    <li class=\"lead\">Visto per gara sportiva</li>
+    <li class=\"lead\">Visto per invito</li>
+    <li class=\"lead\">Visto per lavoro autonomo</li>
+    <li class=\"lead\">Visto per lavoro subordinato​</li>
+    <li class=\"lead\">Visto per missione</li>
+    <li class=\"lead\">Visto per motivi familiari</li>
+    <li class=\"lead\">Visto per motivi religiosi</li>
+    <li class=\"lead\">Visto di reingresso</li>
+    <li class=\"lead\">Visto per residenza elettiva</li>
+    <li class=\"lead\">Visto per ricerca</li>
+    <li class=\"lead\">Visto per studio</li>
+    <li class=\"lead\">Visto per transito aeroportuale</li>
+    <li class=\"lead\">Visto per transito</li>
+    <li class=\"lead\">Visto per trasporto</li>
+    <li class=\"lead\">Visto per turismo</li>
+    <li class=\"lead\">Visto per vacanze - lavoro</li>
+    <li class=\"lead\">Visto per volontariato</li>
+  </ul>
 "
 family_reunification: "Ricongiungimento familiare"
-family_reunification_text: "<p class=\"lead\">La Costituzione italiana riconosce i diritti fondamentali
-                                            della famiglia quale società naturale fondata sul
-                                            matrimonio.</p>
-                                        <p class=\"lead\">Hai dei dubbi sulla procedura? Contatta l’Associazione
-                                            Articolo 2.</p>"
+family_reunification_text: "<p class=\"lead\">La Costituzione italiana riconosce i diritti fondamentali della famiglia quale società naturale fondata sul matrimonio.</p>
+  <p class=\"lead\">Hai dei dubbi sulla procedura? Contatta l’Associazione Articolo 2.</p>
+"
 family_cohesion: "Coesione familiare"
-family_cohesion_text: "<p class=\"lead\">Sei arrivato in Italia, ti sei ricongiunto ai tuoi familiari e
-                                  vuoi ottenere un permesso di soggiorno? Chiedi
-                                  all’Associazione Articolo 2 come ottenere un permesso di
-                                  soggiorno per i tuoi cari.</p>"
+family_cohesion_text: "<p class=\"lead\">Sei arrivato in Italia, ti sei ricongiunto ai tuoi familiari e vuoi ottenere un permesso di soggiorno? Chiedi all’Associazione Articolo 2 come ottenere un permesso di soggiorno per i tuoi cari.</p>"
 international_protection: "Asilo politico e Protezione Internazionale"
-international_protection_text: "<p class=\"lead\">Sei giunto in Italia per sottrarti a persecuzioni o rischi di
-                                           un danno grave alla tua persona? Chiamaci e ti
-                                           accompagneremo nel corso della procedura per chiedere il​
-                                           riconoscimento della protezione internazionale, dell'asilo
-                                           politico o della protezione sussidiaria.</p>"
+international_protection_text: "<p class=\"lead\">Sei giunto in Italia per sottrarti a persecuzioni o rischi di un danno grave alla tua persona? Chiamaci e ti accompagneremo nel corso della procedura per chiedere il​ riconoscimento della protezione internazionale, dell'asilo politico o della protezione sussidiaria.</p>"
 caption_1: "Didascalia 1"
 caption_2: "Didascalia 2"
 caption_3: "Didascalia 3"
