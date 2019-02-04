@@ -1,7 +1,12 @@
 /* Featurettes
 ------------------------- */
 
-.featurette-divider, .featurette-container {
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  border-top: 1px solid $primary;
+}
+
+.featurette-container {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
