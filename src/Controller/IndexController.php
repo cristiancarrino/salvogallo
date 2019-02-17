@@ -41,17 +41,43 @@ class IndexController extends AbstractController
     /** @Route("/contatti", name="contacts")
      *  @throws \Exception
      */
-    public function contacts(Request $request)
+    public function contacts(Request $request, \Swift_Mailer $mailer)
     {
         $form = $this->createForm(ContactUsType::class);
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
 
-//            $em = $this->getDoctrine()->getManager();
-//            $message->setDate(new DateTime());
-//            $em->persist($message);
-//            $em->flush();
+            $data = $form->getData();
+
+            $message = (new \Swift_Message('Nuovo messaggio da un utente'))
+                ->setFrom($data['email'])
+                ->setTo('info@articolo2.com')
+                ->setBody(
+                    $this->renderView(
+                    // templates/emails/registration.html.twig
+                        'emails/contact_us.html.twig', [
+                            'firstname' => $data['firstname'],
+                            'lastname' => $data['lastname'],
+                            'email' => $data['email'],
+                            'message' => $data['message']
+                        ]
+                    ),
+                    'text/html'
+                )
+                /*
+                 * If you also want to include a plaintext version of the message
+                ->addPart(
+                    $this->renderView(
+                        'emails/registration.txt.twig',
+                        ['name' => $name]
+                    ),
+                    'text/plain'
+                )
+                */
+            ;
+
+            $mailer->send($message);
 
             $this->addFlash('success','message.sent.success');
             return $this->redirect($request->getUri());

@@ -21,3 +21,21 @@ body {
   height: 1.5rem;
   vertical-align: text-bottom;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+
+  &.active {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: 4px;
+      content: '';
+      height: 2px;
+      background: white;
+    }
+  }
+}
