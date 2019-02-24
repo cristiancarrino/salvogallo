@@ -1,0 +1,24 @@
+{% if app.session is not null and app.session.started %}
+    <div id="flash-messages">
+        {% for type, messages in app.session.flashbag.all %}
+            {% for message in messages %}
+                <div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+                    {% if type == 'success' %}
+                        <strong><i class="fa fa-check" aria-hidden="true"></i></strong>
+                    {% elseif type == 'warning' %}
+                        <strong><i class="fa fa-exclamation" aria-hidden="true"></i></strong>
+                    {% elseif type == 'danger' %}
+                        <strong><i class="fa fa-times" aria-hidden="true"></i></strong>
+                    {% else %}
+                        <strong><i class="fa fa-exclamation-info" aria-hidden="true"></i></strong>
+                    {% endif %}
+
+                    {{ message | trans }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+{% endif %}

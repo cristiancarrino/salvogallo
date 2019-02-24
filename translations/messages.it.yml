@@ -3,3 +3,4 @@ Firstname: "Nome"
 Lastname: "Cognome"
 Message: "Messaggio"
 Send: "Invia"
+message.sent.success: Messaggio inviato con successo.

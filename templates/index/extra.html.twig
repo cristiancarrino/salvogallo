@@ -6,7 +6,9 @@
     <div class="featurette-container">
         <div class="row featurette">
             <div class="col-md-5">
-                <img class="featurette-image w-100 border" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_1' | trans({}, 'extra') }}">
+                <div class="featurette-image-wrapper">
+                    <img class="featurette-image" src="{{ asset('img/img07.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
+                </div>
                 <p class="text-muted">{{ 'caption_1' | trans({}, 'extra') }}</p>
             </div>
             <div class="col-md-7">
@@ -26,7 +28,9 @@
                 <p class="lead">...</p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image w-100" src="{{ asset('img/thumbnail.png') }}" alt="{{ 'caption_2' | trans({}, 'extra') }}">
+                <div class="featurette-image-wrapper">
+                    <img class="featurette-image" src="{{ asset('img/img08.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
+                </div>
                 <p class="text-muted">{{ 'caption_2' | trans({}, 'extra') }}</p>
             </div>
         </div>

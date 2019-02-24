@@ -21,4 +21,13 @@
     color: $primary;
     margin-bottom: 1rem;
   }
+
+  .featurette-image-wrapper {
+    border: 3px solid black;
+
+    .featurette-image {
+      border: 3px solid white;
+      width: 100%;
+    }
+  }
 }

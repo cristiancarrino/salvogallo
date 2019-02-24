@@ -70,18 +70,19 @@
             "@auto-scripts"
         ],
         "deploy-verbose": [
-            "echo -e '\n\n\n-----------------------------\n'$(date)'\n-----------------------------\n'",
-            "git reset --hard HEAD",
+            "git reset --hard",
             "git pull origin master",
             "cp ./.env.prod ./.env",
             "composer install",
             "php bin/console cache:clear --env=prod --no-debug",
+            "php bin/console doctrine:schema:update --force",
             "npm list yarn || npm install yarn --save",
             "node_modules/yarn/bin/yarn install --prod",
             "node_modules/yarn/bin/yarn run encore production"
         ],
         "deploy": [
-            "composer deploy-verbose &>>../deploy.log"
+            "echo -e '\n\n\n-----------------------------\n'$(date)'\n-----------------------------\n' 2>&1 | tee -a ../deploy.log",
+            "composer deploy-verbose 2>&1 | tee -a ../deploy.log"
         ]
     },
     "conflict": {
