@@ -2,12 +2,18 @@
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0;
   border-top: 1px solid $primary;
 }
 
 .featurette-container {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0;
+}
+
+@include media-breakpoint-down(sm) {
+  .featurette-container {
+    margin: 2rem 0;
+  }
 }
 
 /* Thin out the marketing headings */
