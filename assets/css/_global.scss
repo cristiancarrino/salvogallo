@@ -32,17 +32,18 @@ body {
   color: white;
 
   &.active {
-    position: relative;
-
-    &:after {
-      position: absolute;
-      left: 8px;
-      right: 8px;
-      bottom: 4px;
-      content: '';
-      height: 2px;
-      background: white;
-    }
+    color: black;
+    //position: relative;
+    //
+    //&:after {
+    //  position: absolute;
+    //  left: 8px;
+    //  right: 8px;
+    //  bottom: 4px;
+    //  content: '';
+    //  height: 2px;
+    //  background: white;
+    //}
   }
 }
 

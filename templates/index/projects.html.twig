@@ -6,10 +6,10 @@
         <div class="featurette-container">
             <div class="row featurette">
                 <div class="col-md-5">
-                    <div class="featurette-image-wrapper">
+                    <div class="featurette-image-wrapper d-none d-md-block">
                         <img class="featurette-image" src="{{ asset('img/img03.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
                     </div>
-                    <p class="text-muted mb-5">{{ 'caption_1' | trans({}, 'projects') }}</p>
+                    <p class="text-muted mb-5 d-none d-md-block">{{ 'caption_1' | trans({}, 'projects') }}</p>
 
 
                     <div class="featurette-image-wrapper">
@@ -27,16 +27,16 @@
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">{{ 'events' | trans({}, 'projects') }}</h2>
-
-                    {{ 'events_text' | trans({}, 'projects') | raw }}
-                </div>
-                <div class="col-md-5">
+                <div class="col-md-5 order-md-1">
                     <div class="featurette-image-wrapper">
                         <img class="featurette-image" src="{{ asset('img/img04.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
                     </div>
                     <p class="text-muted">{{ 'caption_2' | trans({}, 'projects') }}</p>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'events' | trans({}, 'projects') }}</h2>
+
+                    {{ 'events_text' | trans({}, 'projects') | raw }}
                 </div>
             </div>
 
@@ -59,16 +59,16 @@
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">{{ 'networking' | trans({}, 'projects') }}</h2>
-
-                    {{ 'networking_text' | trans({}, 'projects') | raw }}
-                </div>
-                <div class="col-md-5">
+                <div class="col-md-5 order-md-1">
                     <div class="featurette-image-wrapper">
                         <img class="featurette-image" src="{{ asset('img/img06.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
                     </div>
                     <p class="text-muted">{{ 'caption_4' | trans({}, 'projects') }}</p>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{ 'networking' | trans({}, 'projects') }}</h2>
+
+                    {{ 'networking_text' | trans({}, 'projects') | raw }}
                 </div>
             </div>
         </div>

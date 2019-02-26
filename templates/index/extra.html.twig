@@ -23,15 +23,15 @@
         <hr class="featurette-divider">
 
         <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">{{ 'they_say_about_us' | trans({}, 'extra') }}</h2>
-                <p class="lead">...</p>
-            </div>
-            <div class="col-md-5">
+            <div class="col-md-5 order-md-1">
                 <div class="featurette-image-wrapper">
                     <img class="featurette-image" src="{{ asset('img/img08.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
                 </div>
                 <p class="text-muted">{{ 'caption_2' | trans({}, 'extra') }}</p>
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">{{ 'they_say_about_us' | trans({}, 'extra') }}</h2>
+                <p class="lead">...</p>
             </div>
         </div>
     </div>
