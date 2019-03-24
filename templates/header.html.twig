@@ -1,7 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="{{ path('index') }}" id="navbar-left">
         <img class="navbar-logo" src="{{ asset('img/logo.png') }}" alt="Associazione Articolo 2">
-        Associazione Articolo 2
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -9,7 +8,7 @@
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto">
-            <a class="nav-item nav-link {% if app.request.attributes.get('_route') == 'index' %} active{% endif %}" href="{{ path('index') }}">L'associazione <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link{% if app.request.attributes.get('_route') == 'association' %} active{% endif %}" href="{{ path('association') }}">L'associazione <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link{% if app.request.attributes.get('_route') == 'what' %} active{% endif %}" href="{{ path('what') }}">Cosa facciamo</a>
             <a class="nav-item nav-link{% if app.request.attributes.get('_route') == 'projects' %} active{% endif %}" href="{{ path('projects') }}">Progetti/Eventi</a>
             <a class="nav-item nav-link{% if app.request.attributes.get('_route') == 'extra' %} active{% endif %}" href="{{ path('extra') }}">Extra italiani</a>
@@ -30,10 +29,10 @@
     </div>
 </nav>
 
-<script>
-    const left = $('#navbar-left');
-    const right = $('#navbar-right');
-    const max = Math.max(left.width(), right.width());
-    left.width(max);
-    right.width(max);
-</script>
+{#<script>#}
+    {#const left = $('#navbar-left');#}
+    {#const right = $('#navbar-right');#}
+    {#const max = Math.max(left.width(), right.width());#}
+    {#left.width(max);#}
+    {#right.width(max);#}
+{#</script>#}

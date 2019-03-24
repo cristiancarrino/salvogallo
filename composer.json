@@ -78,7 +78,8 @@
             "php bin/console doctrine:schema:update --force",
             "npm list yarn || npm install yarn --save",
             "node_modules/yarn/bin/yarn install --prod",
-            "node_modules/yarn/bin/yarn run encore production"
+            "node_modules/yarn/bin/yarn run encore production",
+            "php bin/console doctrine:schema:update --force"
         ],
         "deploy": [
             "echo -e '\n\n\n-----------------------------\n'$(date)'\n-----------------------------\n' 2>&1 | tee -a ../deploy.log",
