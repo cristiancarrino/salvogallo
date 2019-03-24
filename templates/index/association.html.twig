@@ -20,35 +20,19 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-5 order-md-1">
-                    <div class="featurette-image-wrapper">
-                        <img class="featurette-image" src="{{ asset('img/img02.jpg') }}" alt="{{ 'caption_1' | trans({}, 'association') }}">
-                    </div>
-                    <p class="text-muted">{{ 'caption_2' | trans({}, 'association') }}</p>
-                </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">{{ 'mission' | trans({}, 'association') }}</h2>
+            <div class="featurette">
+                <h2 class="featurette-heading">{{ 'mission' | trans({}, 'association') }}</h2>
 
-                    {{ 'mission_text' | trans({}, 'association') | raw }}
-                </div>
+                {{ 'mission_text' | trans({}, 'association') | raw }}
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
-            <div class="col-md-5">
-                <div class="featurette-image-wrapper">
-                    <img class="featurette-image" src="{{ asset('img/img04.jpg') }}" alt="{{ 'caption_1' | trans({}, 'association') }}">
-                </div>
-                <p class="text-muted">{{ 'caption_3' | trans({}, 'association') }}</p>
-            </div>
-            <div class="col-md-7">
+            <div class="featurette">
                 <h2 class="featurette-heading">{{ 'vision' | trans({}, 'association') }}</h2>
 
                 {{ 'vision_text' | trans({}, 'association') | raw }}
             </div>
-        </div>
         </div>
         <!-- /END THE FEATURETTES -->
     </div>

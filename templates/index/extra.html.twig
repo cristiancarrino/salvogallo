@@ -2,39 +2,30 @@
 
 {% block main %}
 <div class="container">
-    <!-- START THE FEATURETTES -->
     <div class="featurette-container">
-        <div class="row featurette">
-            <div class="col-md-5">
-                <div class="featurette-image-wrapper">
-                    <img class="featurette-image" src="{{ asset('img/6.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
-                </div>
-                <p class="text-muted">{{ 'caption_1' | trans({}, 'extra') }}</p>
+        <div class="featurette">
+            <div class="featurette-image-wrapper">
+                <img class="featurette-image" src="{{ asset('img/6.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
             </div>
-            <div class="col-md-7">
-                <h2 class="featurette-heading">{{ 'stories_of_integration' | trans({}, 'extra') }}</h2>
-
-                {{ 'stories' | trans({}, 'extra') | raw }}
-
-                <p class="lead">{{ 'send_us_a_mail' | trans({}, 'extra') }} <a href="mailto:info@articolo2.com">info@articolo2.com</a></p>
-            </div>
+            <p class="text-muted">{{ 'caption_1' | trans({}, 'extra') }}</p>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-5 order-md-1">
-                <div class="featurette-image-wrapper">
-                    <img class="featurette-image" src="{{ asset('img/6.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
-                </div>
-                <p class="text-muted">{{ 'caption_2' | trans({}, 'extra') }}</p>
-            </div>
-            <div class="col-md-7">
-                <h2 class="featurette-heading">{{ 'they_say_about_us' | trans({}, 'extra') }}</h2>
-                <p class="lead">...</p>
-            </div>
+        <div class="featurette">
+            <h2 class="featurette-heading">{{ 'stories_of_integration' | trans({}, 'extra') }}</h2>
+
+            {{ 'stories' | trans({}, 'extra') | raw }}
+
+            <p class="lead">{{ 'send_us_a_mail' | trans({}, 'extra') }} <a href="mailto:info@articolo2.com">info@articolo2.com</a></p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="featurette">
+            <h2 class="featurette-heading">{{ 'they_say_about_us' | trans({}, 'extra') }}</h2>
+            <p class="lead">...</p>
         </div>
     </div>
-    <!-- /END THE FEATURETTES -->
 </div>
 {% endblock %}

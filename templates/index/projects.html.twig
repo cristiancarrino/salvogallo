@@ -4,66 +4,43 @@
     <div class="container">
         <!-- START THE FEATURETTES -->
         <div class="featurette-container">
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <div class="featurette-image-wrapper d-none d-md-block">
-                        <img class="featurette-image" src="{{ asset('img/5.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
-                    </div>
-                    <p class="text-muted mb-5 d-none d-md-block">{{ 'caption_1' | trans({}, 'projects') }}</p>
+            <div class="featurette">
+                <div class="featurette-image-wrapper d-none d-md-block">
+                    <img class="featurette-image" src="{{ asset('img/5.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
                 </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">{{ 'art2_informs' | trans({}, 'projects') }}</h2>
-
-                    {{ 'art2_informs_text' | trans({}, 'projects') | raw }}
-                </div>
+                <p class="text-muted mb-5 d-none d-md-block">{{ 'caption_1' | trans({}, 'projects') }}</p>
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-5 order-md-1">
-                    <div class="featurette-image-wrapper">
-                        <img class="featurette-image" src="{{ asset('img/img04.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
-                    </div>
-                    <p class="text-muted">{{ 'caption_2' | trans({}, 'projects') }}</p>
-                </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">{{ 'events' | trans({}, 'projects') }}</h2>
+            <div class="featurette">
+                <h2 class="featurette-heading">{{ 'art2_informs' | trans({}, 'projects') }}</h2>
 
-                    {{ 'events_text' | trans({}, 'projects') | raw }}
-                </div>
+                {{ 'art2_informs_text' | trans({}, 'projects') | raw }}
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <div class="featurette-image-wrapper">
-                        <img class="featurette-image" src="{{ asset('img/img05.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
-                    </div>
-                    <p class="text-muted">{{ 'caption_3' | trans({}, 'projects') }}</p>
-                </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">{{ 'collaborations' | trans({}, 'projects') }}</h2>
+            <div class="featurette">
+                <h2 class="featurette-heading">{{ 'events' | trans({}, 'projects') }}</h2>
 
-                    {{ 'collaborations_text' | trans({}, 'projects') | raw }}
-                </div>
+                {{ 'events_text' | trans({}, 'projects') | raw }}
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-5 order-md-1">
-                    <div class="featurette-image-wrapper">
-                        <img class="featurette-image" src="{{ asset('img/img06.jpg') }}" alt="{{ 'caption_1' | trans({}, 'index') }}">
-                    </div>
-                    <p class="text-muted">{{ 'caption_4' | trans({}, 'projects') }}</p>
-                </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">{{ 'networking' | trans({}, 'projects') }}</h2>
+            <div class="featurette">
+                <h2 class="featurette-heading">{{ 'collaborations' | trans({}, 'projects') }}</h2>
 
-                    {{ 'networking_text' | trans({}, 'projects') | raw }}
-                </div>
+                {{ 'collaborations_text' | trans({}, 'projects') | raw }}
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="featurette">
+                <h2 class="featurette-heading">{{ 'networking' | trans({}, 'projects') }}</h2>
+
+                {{ 'networking_text' | trans({}, 'projects') | raw }}
             </div>
         </div>
         <!-- /END THE FEATURETTES -->
