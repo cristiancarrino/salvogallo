@@ -4,18 +4,19 @@
     <div class="container">
         <!-- START THE FEATURETTES -->
         <div class="featurette-container">
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <div class="featurette-image-wrapper">
-                        <img class="featurette-image" src="{{ asset('img/logo_big.png') }}" alt="{{ 'caption_1' | trans({}, 'association') }}">
-                    </div>
-                    <p class="text-muted">{{ 'caption_1' | trans({}, 'association') }}</p>
+            <div class="featurette">
+                <div class="featurette-image-wrapper">
+                    <img class="featurette-image" src="{{ asset('img/logo.png') }}" alt="{{ 'caption_1' | trans({}, 'association') }}">
                 </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">{{ 'who_we_are' | trans({}, 'association') }}</h2>
+                <p class="text-muted">{{ 'caption_1' | trans({}, 'association') }}</p>
+            </div>
 
-                    {{ 'who_we_are_text' | trans({}, 'association') | raw }}
-                </div>
+            <hr class="featurette-divider">
+
+            <div class="featurette">
+                <h2 class="featurette-heading">{{ 'who_we_are' | trans({}, 'association') }}</h2>
+
+                {{ 'who_we_are_text' | trans({}, 'association') | raw }}
             </div>
 
             <hr class="featurette-divider">
