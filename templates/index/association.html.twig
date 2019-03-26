@@ -7,7 +7,7 @@
             <img class="w-100 mb-4 mb-md-5" src="{{ asset('img/logo.png') }}" alt="{{ 'caption_1' | trans({}, 'association') }}">
 
             <div class="featurette">
-                <h2 class="featurette-heading">{{ 'who_we_are' | trans({}, 'association') }}</h2>
+                <h2 class="featurette-heading" id="chi-siamo">{{ 'who_we_are' | trans({}, 'association') }}</h2>
 
                 {{ 'who_we_are_text' | trans({}, 'association') | raw }}
             </div>
@@ -15,14 +15,14 @@
             <hr class="featurette-divider">
 
             <div class="featurette">
-                <h2 class="featurette-heading">{{ 'mission' | trans({}, 'association') }}</h2>
+                <h2 class="featurette-heading" id="mission">{{ 'mission' | trans({}, 'association') }}</h2>
 
                 {{ 'mission_text' | trans({}, 'association') | raw }}
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="featurette">
+            <div class="featurette" id="vision">
                 <h2 class="featurette-heading">{{ 'vision' | trans({}, 'association') }}</h2>
 
                 {{ 'vision_text' | trans({}, 'association') | raw }}
