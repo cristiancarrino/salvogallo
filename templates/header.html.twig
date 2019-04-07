@@ -8,14 +8,10 @@
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto">
-            {#<a class="nav-item nav-link{% if app.request.attributes.get('_route') == 'association' %} active{% endif %}" href="{{ path('association') }}">L'associazione<span class="sr-only">(current)</span></a>#}
-            {#<a class="nav-item nav-link{% if app.request.attributes.get('_route') == 'what' %} active{% endif %}" href="{{ path('what') }}">Cosa facciamo</a>#}
-            {#<a class="nav-item nav-link{% if app.request.attributes.get('_route') == 'projects' %} active{% endif %}" href="{{ path('projects') }}">Progetti/Eventi</a>#}
-            {#<a class="nav-item nav-link{% if app.request.attributes.get('_route') == 'extra' %} active{% endif %}" href="{{ path('extra') }}">Extra italiani</a>#}
             <div class="nav-item dropdown">
                 <a class="nav-link{% if app.request.attributes.get('_route') == 'association' %} active{% endif %} dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">L'associazione</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
-                    <a class="dropdown-item" href="{{ path('association') }}#chi-siamo">{{ 'who_we_are' | trans({}, 'association') }}</a>
+                    <a class="dropdown-item" href="{{ path('association') }}{##chi-siamo#}">{{ 'who_we_are' | trans({}, 'association') }}</a>
                     <a class="dropdown-item" href="{{ path('association') }}#mission">{{ 'mission' | trans({}, 'association') }}</a>
                     <a class="dropdown-item" href="{{ path('association') }}#vision">{{ 'vision' | trans({}, 'association') }}</a>
                 </div>
@@ -23,6 +19,7 @@
             <div class="nav-item dropdown">
                 <a class="nav-link{% if app.request.attributes.get('_route') == 'what' %} active{% endif %} dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cosa facciamo</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item" href="{{ path('what') }}{##azioni-legali#}">{{ 'lawsuits' | trans({}, 'what') }}</a>
                     <a class="dropdown-item" href="{{ path('what') }}#permesso-di-soggiorno">{{ 'residency_permit' | trans({}, 'what') }}</a>
                     <a class="dropdown-item" href="{{ path('what') }}#carta-di-soggiorno">{{ 'residence_card' | trans({}, 'what') }}</a>
                     <a class="dropdown-item" href="{{ path('what') }}#cittadinanza">{{ 'citizenship' | trans({}, 'what') }}</a>
@@ -35,7 +32,7 @@
             <div class="nav-item dropdown">
                 <a class="nav-link{% if app.request.attributes.get('_route') == 'projects' %} active{% endif %} dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Progetti/Eventi</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
-                    <a class="dropdown-item" href="{{ path('projects') }}#art2-informa">{{ 'art2_informs' | trans({}, 'projects') }}</a>
+                    <a class="dropdown-item" href="{{ path('projects') }}{##art2-informa#}">{{ 'art2_informs' | trans({}, 'projects') }}</a>
                     <a class="dropdown-item" href="{{ path('projects') }}#eventi">{{ 'events' | trans({}, 'projects') }}</a>
                     <a class="dropdown-item" href="{{ path('projects') }}#collaborazioni">{{ 'collaborations' | trans({}, 'projects') }}</a>
                     <a class="dropdown-item" href="{{ path('projects') }}#networking">{{ 'networking' | trans({}, 'projects') }}</a>
@@ -44,7 +41,7 @@
             <div class="nav-item dropdown">
                 <a class="nav-link{% if app.request.attributes.get('_route') == 'extra' %} active{% endif %} dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Extra italiani</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
-                    <a class="dropdown-item" href="{{ path('extra') }}#storie-di-integrazione">{{ 'stories_of_integration' | trans({}, 'extra') }}</a>
+                    <a class="dropdown-item" href="{{ path('extra') }}{##storie-di-integrazione#}">{{ 'stories_of_integration' | trans({}, 'extra') }}</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{{ path('extra') }}#dicono-di-noi">{{ 'they_say_about_us' | trans({}, 'extra') }}</a>
                 </div>
