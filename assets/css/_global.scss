@@ -52,6 +52,15 @@ footer {
           height: 2px;
           background: $primary;
         }
+
+        &.dropdown-toggle {
+          padding-left: 0;
+
+          &:before {
+            left: -8px;
+            right: 8px;
+          }
+        }
       }
     }
   }
